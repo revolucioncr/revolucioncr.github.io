@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Frente Revolucionario — Costa Rica</title>
+    <meta name="description" content="Servidor orientado a la praxis: conciencia, organización y acción.">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --fr-red: #cc0000;
+            --fr-black: #0b0b0b;
+            --fr-white: #f8f9fa;
+        }
+
+        html,
+        body {
+            height: 100%;
+            background-color: var(--fr-black);
+            color: var(--fr-white);
+            font-family: "Times New Roman", Times, serif;
+        }
+
+        .navbar {
+            background-color: var(--fr-black);
+            border-bottom: 2px solid var(--fr-red);
+        }
+
+        .brand-accent {
+            color: var(--fr-red);
+            font-weight: 700;
+            letter-spacing: 0.5px;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--fr-black) 0%, #1a1a1a 100%);
+            padding: 4rem 1rem;
+            border-bottom: 2px solid var(--fr-red);
+        }
+
+        .hero h1 {
+            color: var(--fr-white);
+            font-size: clamp(2rem, 4vw, 3rem);
+        }
+
+        .hero p.lead {
+            max-width: 56ch;
+        }
+
+        .manifesto {
+            padding: 3rem 1rem;
+        }
+
+        .quote {
+            border-left: 4px solid var(--fr-red);
+            padding-left: 1rem;
+            margin: 1rem 0;
+            font-style: italic;
+        }
+
+        .links-card {
+            background-color: #121212;
+            border: 1px solid var(--fr-red);
+        }
+
+        .btn-fr {
+            background-color: var(--fr-red);
+            color: var(--fr-white);
+            border: none;
+        }
+
+        .btn-fr:hover,
+        .btn-fr:focus {
+            background-color: #a60000;
+            color: var(--fr-white);
+        }
+
+        .footer {
+            border-top: 2px solid var(--fr-red);
+            padding: 1.5rem 0;
+            font-size: 0.95rem;
+        }
+
+        a {
+            color: var(--fr-red);
+            text-decoration: none;
+        }
+
+        a:hover,
+        a:focus {
+            color: #e60000;
+            text-decoration: underline;
+        }
+
+        .links-card {
+            background-color: #121212;
+            border: 1px solid var(--fr-red);
+            color: var(--fr-white);
+            /* fuerza texto claro */
+        }
+
+        .links-card .card-title,
+        .links-card .card-text {
+            color: var(--fr-white);
+            /* asegura títulos y párrafos en blanco */
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg" role="navigation" aria-label="Barra de navegación">
+        <div class="container">
+            <a class="navbar-brand text-white" href="#">
+                <span class="brand-accent">Frente</span> Revolucionario
+            </a>
+            <button class="navbar-toggler text-white border-0" type="button" data-bs-toggle="collapse"
+                data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Abrir navegación">
+                ☰
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link text-white" href="#manifiesto">Manifiesto</a></li>
+                    <li class="nav-item"><a class="nav-link text-white" href="#enlaces">Enlaces</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="mb-3">Somos el Frente Revolucionario de Costa Rica</h1>
+            <p class="lead">
+                Somos una organización orientada a la praxis. Porque no basta con interpretar el mundo: hay que
+                transformarlo.
+                Cansados del status quo, la miseria, la desigualdad y el abuso de poder, organizamos acción y
+                conciencia.
+            </p>
+            <div class="mt-4">
+                <a class="btn btn-fr me-2" href="#enlaces">Únete</a>
+                <a class="btn btn-outline-light" href="#manifiesto">Leer manifiesto</a>
+            </div>
+        </div>
+    </header>
+
+    <main id="manifiesto" class="manifesto">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8">
+                    <h2 class="mb-3">Manifiesto</h2>
+                    <p>
+                        Somos el Frente Revolucionario. Somos costarricenses. Este espacio es para quienes están
+                        cansados del status quo, la miseria, la desigualdad y el abuso de poder. Estamos hartos de
+                        un país que entrega sus recursos e identidad al capital extranjero.
+                    </p>
+                    <p>
+                        Este servidor está orientado a la praxis: no solo hablamos ni nos quejamos; actuamos,
+                        generamos conciencia y ayudamos. Organizamos trabajo colectivo, compartimos herramientas y
+                        construimos redes reales de apoyo.
+                    </p>
+                    <div class="quote" aria-label="Cita de Karl Marx">
+                        “Los filósofos solo han interpretado el mundo de diversas maneras; de lo que se trata es de
+                        transformarlo.” — Karl Marx
+                    </div>
+                    <p>
+                        Si compartes estos principios, suma tu voz y tu trabajo. La transformación requiere voluntad,
+                        disciplina y comunidad.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section id="enlaces" class="py-4">
+        <div class="container">
+            <h2 class="mb-3">Enlaces de organización</h2>
+            <div class="row g-3">
+                <div class="col-md-4">
+                    <div class="card links-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Discord</h3>
+                            <p class="card-text">Canal para coordinación y debate en tiempo real.</p>
+                            <a class="btn btn-fr w-100" href="https://discord.gg/TngFs4G9r4" target="_blank"
+                                rel="noopener">Entrar a Discord</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card links-card h-100">
+                        <div class="card-body">
+                            <h3 class="card-title h5">Telegram</h3>
+                            <p class="card-text">Difusión rápida y grupos de trabajo.</p>
+                            <a class="btn btn-fr w-100" href="https://t.me/revolucioncr" target="_blank"
+                                rel="noopener">Unirse a Telegram</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="mt-3">Próximamente: recursos, materiales, y más enlaces según necesidad.</p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <span>© Frente Revolucionario — Costa Rica</span>
+            <span><a href="#manifiesto">Manifiesto</a> · <a href="#enlaces">Enlaces</a></span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
